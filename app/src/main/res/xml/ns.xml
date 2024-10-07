@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Allow cleartext traffic for all IP addresses (for development purposes only) -->
+        <domain includeSubdomains="true">10.0.2.2</domain>  <!-- Emulator -->
+        <domain includeSubdomains="true">localhost</domain> <!-- Localhost for emulator -->
+        <domain includeSubdomains="true">172.16.36.114</domain> <!-- Replace with your machine's IP address -->
+        <domain includeSubdomains="true">*</domain>  <!-- Catch-all for other domains -->
+    </domain-config>
+</network-security-config>
